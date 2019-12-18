@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Airbnb hosts social network</title>
+<title>Avision</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Demo project">
@@ -26,20 +26,28 @@
 			<div class="row">
 				<div class="col">
 					<div class="header_content d-flex flex-row align-items-center justify-content-start">
-						<div class="logo"><a href="#">Airbnb hosts social network</a></div>
+						<div class="logo"><a href="#">avision</a></div>
+						<nav class="main_nav">
+							<ul>
+								<li class="active"><a href="index.html">Home</a></li>
+								<li><a href="#">Fashion</a></li>
+								<li><a href="#">Gadgets</a></li>
+								<li><a href="#">Lifestyle</a></li>
+								<li><a href="#">Video</a></li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>
+						</nav>
 						<div class="search_container ml-auto">
+							<div class="weather">
+								<div class="temperature">+10°</div>
+								<img class="weather_icon" src="images/cloud.png" alt="">
+							</div>
 							<form action="#">
 								<input type="search" class="header_search_input" required="required" placeholder="Type to Search...">
 								<img class="header_search_icon" src="images/search.png" alt="">
 							</form>
+							
 						</div>
-						<nav class="main_nav">
-							<ul>
-								<li><a href="#">Aide</a></li>
-								<li><a href="#">Messagerie</a></li>
-								<li><a href="#">Connexion</a></li>
-							</ul>
-						</nav>
 						<div class="hamburger ml-auto menu_mm">
 							<i class="fa fa-bars trans_200 menu_mm" aria-hidden="true"></i>
 						</div>
@@ -53,7 +61,7 @@
 
 	<div class="menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400">
 		<div class="menu_close_container"><div class="menu_close"><div></div><div></div></div></div>
-		<div class="logo menu_mm"><a href="#">Airbnb hosts social network</a></div>
+		<div class="logo menu_mm"><a href="#">Avision</a></div>
 		<div class="search">
 			<form action="#">
 				<input type="search" class="header_search_input menu_mm" required="required" placeholder="Type to Search...">
@@ -62,9 +70,12 @@
 		</div>
 		<nav class="menu_nav">
 			<ul class="menu_mm">
-				<li><a href="#">Aide</a></li>
-				<li><a href="#">Messagerie</a></li>
-				<li><a href="#">Connexion</a></li>
+				<li class="menu_mm"><a href="index.html">home</a></li>
+				<li class="menu_mm"><a href="#">Fashion</a></li>
+				<li class="menu_mm"><a href="#">Gadgets</a></li>
+				<li class="menu_mm"><a href="#">Lifestyle</a></li>
+				<li class="menu_mm"><a href="#">Video</a></li>
+				<li class="menu_mm"><a href="contact.html">Contact</a></li>
 			</ul>
 		</nav>
 	</div>
@@ -329,8 +340,26 @@
 									<div class="card card_largest_with_image grid-item">
 										<img class="card-img-top" src="images/post_1.jpg" alt="https://unsplash.com/@cjtagupa">
 										<div class="card-body">
-											<div class="card-title"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</a></div>
-											<p class="card-text">Pick the yellow peach that looks like a sunset with its red, orange, and pink coat skin, peel it off with your teeth. Sink them into unripened...</p>
+											<div class="card-title"><a href="post.html">Discussion 1</a></div>
+											<p class="card-text">Bla Bla Bla</p>
+											<small class="post_meta"><a href="#">Katy Liu</a><span>Sep 29, 2017 at 9:48 am</span></small>
+										</div>
+									</div>
+                                    <!-- Largest Card With Image -->
+									<div class="card card_largest_with_image grid-item">
+										<img class="card-img-top" src="images/post_1.jpg" alt="https://unsplash.com/@cjtagupa">
+										<div class="card-body">
+											<div class="card-title"><a href="post.html">Discussion 2</a></div>
+											<p class="card-text">Bla Bla Bla</p>
+											<small class="post_meta"><a href="#">Katy Liu</a><span>Sep 29, 2017 at 9:48 am</span></small>
+										</div>
+									</div>
+                                    <!-- Largest Card With Image -->
+									<div class="card card_largest_with_image grid-item">
+										<img class="card-img-top" src="images/post_1.jpg" alt="https://unsplash.com/@cjtagupa">
+										<div class="card-body">
+											<div class="card-title"><a href="post.html">Discussion 3</a></div>
+											<p class="card-text">Bla Bla Bla</p>
 											<small class="post_meta"><a href="#">Katy Liu</a><span>Sep 29, 2017 at 9:48 am</span></small>
 										</div>
 									</div>
@@ -338,61 +367,12 @@
 									<!-- Small Card Without Image -->
 									<div class="card card_default card_small_no_image grid-item">
 										<div class="card-body">
-											<div class="card-title card-title-small"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</a></div>
-											<small class="post_meta"><a href="#">Katy Liu</a><span>Sep 29, 2017 at 9:48 am</span></small>
+											<div class="card-title card-title-small"><a href="post.html"></a></div>
+											<small class="post_meta"><a href="#"></a><span></span></small>
 										</div>
 									</div>
 
-									<!-- Small Card With Background -->
-									<div class="card card_default card_small_with_background grid-item">
-										<div class="card_background" style="background-image:url(images/post_4.jpg)"></div>
-										<div class="card-body">
-											<div class="card-title card-title-small"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</a></div>
-											<small class="post_meta"><a href="#">Katy Liu</a><span>Sep 29, 2017 at 9:48 am</span></small>
-										</div>
-									</div>
-
-									<!-- Small Card With Image -->
-									<div class="card card_small_with_image grid-item">
-										<img class="card-img-top" src="images/post_2.jpg" alt="https://unsplash.com/@jakobowens1">
-										<div class="card-body">
-											<div class="card-title card-title-small"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</a></div>
-											<small class="post_meta"><a href="#">Katy Liu</a><span>Sep 29, 2017 at 9:48 am</span></small>
-										</div>
-									</div>
-
-									<!-- Small Card With Image -->
-									<div class="card card_small_with_image grid-item">
-										<img class="card-img-top" src="images/post_3.jpg" alt="https://unsplash.com/@jannerboy62">
-										<div class="card-body">
-											<div class="card-title card-title-small"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</a></div>
-											<small class="post_meta"><a href="#">Katy Liu</a><span>Sep 29, 2017 at 9:48 am</span></small>
-										</div>
-									</div>
-
-									<!-- Default Card No Image -->
-
-									<div class="card card_default card_default_no_image grid-item">
-										<div class="card-body">
-											<div class="card-title card-title-small"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most</a></div>
-										</div>
-									</div>
-
-									<!-- Default Card No Image -->
-
-									<div class="card card_default card_default_no_image grid-item">
-										<div class="card-body">
-											<div class="card-title card-title-small"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most</a></div>
-										</div>
-									</div>
-
-									<!-- Default Card No Image -->
-
-									<div class="card card_default card_default_no_image grid-item">
-										<div class="card-body">
-											<div class="card-title card-title-small"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most</a></div>
-										</div>
-									</div>
+									
 
 								</div>
 							</div>
@@ -702,7 +682,7 @@
 								</div>
 							
 							<div class="sidebar_title_container">
-								<div class="sidebar_title">Top Stories</div>
+								<div class="sidebar_title">Meilleurs Hôtes</div>
 								<div class="sidebar_slider_nav">
 									<div class="custom_nav_container sidebar_slider_nav_container">
 										<div class="custom_prev custom_prev_top">
@@ -740,8 +720,7 @@
 													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
 														<div class="side_post_image"><div><img src="images/top_1.jpg" alt=""></div></div>
 														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
+															<div class="side_post_title">Nom Prenom</div>
 														</div>
 													</div>
 												</a>
@@ -753,8 +732,8 @@
 													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
 														<div class="side_post_image"><div><img src="images/top_2.jpg" alt=""></div></div>
 														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
+															<div class="side_post_title">Nom Prenom</div>
+															
 														</div>
 													</div>
 												</a>
@@ -766,8 +745,7 @@
 													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
 														<div class="side_post_image"><div><img src="images/top_3.jpg" alt=""></div></div>
 														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
+															<div class="side_post_title">Nom Prenom</div>
 														</div>
 													</div>
 												</a>
@@ -777,10 +755,9 @@
 											<div class="side_post">
 												<a href="post.html">
 													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="side_post_image"><div><img src="images/top_4.jpg" alt=""></div></div>
+														<div class="side_post_image"><div><img src="images/top_1.jpg" alt=""></div></div>
 														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
+															<div class="side_post_title">Nom Prenom</div>
 														</div>
 													</div>
 												</a>
@@ -797,8 +774,7 @@
 													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
 														<div class="side_post_image"><div><img src="images/top_1.jpg" alt=""></div></div>
 														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
+															<div class="side_post_title">Nom Prenom</div>
 														</div>
 													</div>
 												</a>
@@ -808,10 +784,9 @@
 											<div class="side_post">
 												<a href="post.html">
 													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="side_post_image"><div><img src="images/top_2.jpg" alt=""></div></div>
+														<div class="side_post_image"><div><img src="images/top_1.jpg" alt=""></div></div>
 														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
+															<div class="side_post_title">Nom Prenom</div>
 														</div>
 													</div>
 												</a>
@@ -821,10 +796,9 @@
 											<div class="side_post">
 												<a href="post.html">
 													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="side_post_image"><div><img src="images/top_3.jpg" alt=""></div></div>
+														<div class="side_post_image"><div><img src="images/top_1.jpg" alt=""></div></div>
 														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
+															<div class="side_post_title">Nom Prenom</div>
 														</div>
 													</div>
 												</a>
@@ -834,10 +808,9 @@
 											<div class="side_post">
 												<a href="post.html">
 													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="side_post_image"><div><img src="images/top_4.jpg" alt=""></div></div>
+														<div class="side_post_image"><div><img src="images/top_1.jpg" alt=""></div></div>
 														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
+															<div class="side_post_title">Nom Prenom</div>
 														</div>
 													</div>
 												</a>
@@ -854,8 +827,7 @@
 													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
 														<div class="side_post_image"><div><img src="images/top_1.jpg" alt=""></div></div>
 														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
+															<div class="side_post_title">Nom Prenom</div>
 														</div>
 													</div>
 												</a>
@@ -865,10 +837,9 @@
 											<div class="side_post">
 												<a href="post.html">
 													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="side_post_image"><div><img src="images/top_2.jpg" alt=""></div></div>
+														<div class="side_post_image"><div><img src="images/top_1.jpg" alt=""></div></div>
 														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
+															<div class="side_post_title">Nom Prenom</div>
 														</div>
 													</div>
 												</a>
@@ -878,10 +849,9 @@
 											<div class="side_post">
 												<a href="post.html">
 													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="side_post_image"><div><img src="images/top_3.jpg" alt=""></div></div>
+														<div class="side_post_image"><div><img src="images/top_1.jpg" alt=""></div></div>
 														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
+															<div class="side_post_title">Nom Prenom</div>
 														</div>
 													</div>
 												</a>
@@ -891,10 +861,9 @@
 											<div class="side_post">
 												<a href="post.html">
 													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="side_post_image"><div><img src="images/top_4.jpg" alt=""></div></div>
+														<div class="side_post_image"><div><img src="images/top_1.jpg" alt=""></div></div>
 														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
+															<div class="side_post_title">Nom Prenom</div>
 														</div>
 													</div>
 												</a>
