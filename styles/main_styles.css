@@ -10,7 +10,7 @@
 3. Header
 	3.1 Logo
 	3.2 Main Navigation
-	3.3 Weather and Search
+	3.3 Search
 	3.4 Hamburger
 4. Menu
 5. Home
@@ -46,7 +46,7 @@
 }
 body
 {
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Century gothic', sans-serif;
 	font-size: 14px;
 	font-weight: 400;
 	background: #f7f7f7;
@@ -67,7 +67,7 @@ ul
 }
 p
 {
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Century gothic', sans-serif;
 	font-size: 14px;
 	line-height: 1.45;
 	font-weight: 500;
@@ -234,7 +234,11 @@ section
 /*********************************
 3. Header
 *********************************/
-
+.btn-secondary{
+	color: #fff;
+	background-color: transparent !important;
+	border-color: transparent !important;
+}
 .header
 {
 	position: fixed;
@@ -348,7 +352,7 @@ section
 {
 	display: inline-block;
 	width: 262px;
-	height: 46px;
+	height: 30px;
 	background: rgba(255,255,255,0.2);
 	border: none;
 	outline: none;
@@ -598,12 +602,12 @@ section
 }
 .home_slider
 {
-	
+
 }
 .home_slider_background
 {
 	position: absolute;
-	top: 0;
+	top: 100px;
 	left: 0;
 	width: 100%;
 	height: 100%;

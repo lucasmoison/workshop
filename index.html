@@ -6,13 +6,13 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Demo project">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
 <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
 <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
 <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
 <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
 <link rel="stylesheet" type="text/css" href="plugins/jquery.mb.YTPlayer-3.1.12/jquery.mb.YTPlayer.css">
-<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
 <link rel="stylesheet" type="text/css" href="styles/responsive.css">
 </head>
 <body>
@@ -21,24 +21,58 @@
 
 	<!-- Header -->
 
-	<header class="header">
+	<header class="header" style="background-color: #ffffff;">
 		<div class="container">
 			<div class="row">
 				<div class="col">
 					<div class="header_content d-flex flex-row align-items-center justify-content-start">
-						<div class="logo"><a href="#">Aibnb Hosts Community Network</a></div>
+						<div class="logo"><img src="images/airbnb.png" style="width: 170px; height: auto;"></div>
 						<div class="search_container ml-auto">
 							<form action="#">
-								<input type="search" class="header_search_input" required="required" placeholder="Type to Search...">
+								<input type="search" style="height: 30px; background-color: lightgrey;" class="header_search_input" required="required" placeholder="Recherche...">
 								<img class="header_search_icon" src="images/search.png" alt="">
 							</form>
 						</div>
-						<nav class="main_nav">
-							<ul>
-								<li><a href="#">Profile</a></li>
-								<li><a href="#">Communauté</a></li>
-								<li><a href="#">Aide</a></li>
-							</ul>
+						<nav class="main_nav" style="display: flex;">
+							<div class="dropdown">
+								<button class="btn btn-secondary dropdown-toggle"
+										style="color: #000000;
+										background-color: transparent !important;
+										border-color: transparent !important;"
+										type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Profile
+								</button>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+									<button class="dropdown-item" type="button">Mon profile</button>
+									<button class="dropdown-item" type="button">Paramétre</button>
+								</div>
+							</div>
+							<div class="dropdown">
+								<button class="btn btn-secondary dropdown-toggle"
+										style="color: #000000;
+										background-color: transparent !important;
+										border-color: transparent !important;"
+										type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Communauté
+								</button>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+									<button class="dropdown-item" type="button">Messagerie</button>
+									<button class="dropdown-item" type="button">Meet-up</button>
+								</div>
+							</div>
+							<div class="dropdown">
+								<button class="btn btn-secondary dropdown-toggle"
+										style="color: #000000;
+										background-color: transparent !important;
+										border-color: transparent !important;"
+										type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Aide
+								</button>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+									<button class="dropdown-item" type="button">FAQ</button>
+									<button class="dropdown-item" type="button">Centre d'aide</button>
+								</div>
+							</div>
 						</nav>
 						<div class="hamburger ml-auto menu_mm">
 							<i class="fa fa-bars trans_200 menu_mm" aria-hidden="true"></i>
@@ -80,69 +114,7 @@
 				
 				<!-- Slider Item -->
 				<div class="owl-item">
-					<div class="home_slider_background" style="background-image:url(images/home_slider.jpg)"></div>
-					<div class="home_slider_content_container">
-						<div class="container">
-							<div class="row">
-								<div class="col">
-									<div class="home_slider_content">
-										<div class="home_slider_item_category trans_200"><a href="category.html" class="trans_200">sport</a></div>
-										<div class="home_slider_item_title">
-											<a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</a>
-										</div>
-										<div class="home_slider_item_link">
-											<a href="post.html" class="trans_200">Continue Reading
-												<svg version="1.1" id="link_arrow_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-													 width="19px" height="13px" viewBox="0 0 19 13" enable-background="new 0 0 19 13" xml:space="preserve">
-													<polygon fill="#FFFFFF" points="12.475,0 11.061,0 17.081,6.021 0,6.021 0,7.021 17.038,7.021 11.06,13 12.474,13 18.974,6.5 "/>
-												</svg>
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Similar Posts -->
-					<div class="similar_posts_container">
-						<div class="container">
-							<div class="row d-flex flex-row align-items-end">
-
-								<!-- Similar Post -->
-								<div class="col-lg-3 col-md-6 similar_post_col">
-									<div class="similar_post trans_200">
-										<a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most</a>
-									</div>
-								</div>
-
-								<!-- Similar Post -->
-								<div class="col-lg-3 col-md-6 similar_post_col">
-									<div class="similar_post trans_200">
-										<a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most</a>
-									</div>
-								</div>
-
-								<!-- Similar Post -->
-								<div class="col-lg-3 col-md-6 similar_post_col">
-									<div class="similar_post trans_200">
-										<a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most</a>
-									</div>
-								</div>
-
-							</div>
-						</div>
-						
-						<div class="home_slider_next_container">
-							<div class="home_slider_next" style="background-image:url(images/home_slider_next.jpg)">
-								<div class="home_slider_next_background trans_400"></div>
-								<div class="home_slider_next_content trans_400">
-									<div class="home_slider_next_title">next</div>
-									<div class="home_slider_next_link">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</div>
-								</div>
-							</div>
-						</div>
-
+					<div class="home_slider_background" style="background-image:url(images/bandeau.png)"></div>
 					</div>
 				</div>
 
